@@ -70,6 +70,9 @@ Vagrant.configure("2") do |config|
   # View the documentation for the provider you are using for more
   # information on available options.
   config.vm.provider "virtualbox" do |vb|
+    # ESP-IDF builds are memory hogs.
+    vb.memory = "4096"
+
     # Enable USB.
     vb.customize ["modifyvm", :id, "--usb-xhci", "on"]
 
