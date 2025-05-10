@@ -1,5 +1,4 @@
 .vagrant/
+config/
 projects/
 
-# Configuration files pulled from host machine
-dot-vimrc
